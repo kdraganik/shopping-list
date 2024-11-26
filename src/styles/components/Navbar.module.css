@@ -1,0 +1,28 @@
+.navBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoBox{
+    margin-left: 20px;
+}
+
+.logoBox a{
+    text-decoration: none;
+    color: black;
+}
+
+.linkBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.linkBox a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Robot', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e3e0;
+    color: #231f20;
+}
+
+.container {
+    width: 100%;
+    padding: 0 60px;
+}

@@ -3,12 +3,17 @@
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Row from "@/components/Row";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 
+  useEffect(() => {
+    fetch('/api/getList')
+      .then(response => response.json())
+      .then(data => setItemes(data));
+  }, []);
+
   const [itemes, setItemes] = useState([]);
-  
 
   return (
     <div className={styles.container}>

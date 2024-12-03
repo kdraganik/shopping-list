@@ -1,6 +1,6 @@
 import styles from '@/styles/components/Row.module.css';
 
-export default function Row({name, link, price, key}) {
+export default function Row({name, link, price}) {
  return (
     <div className={styles.row}>
         <div>

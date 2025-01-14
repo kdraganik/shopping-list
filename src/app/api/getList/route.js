@@ -3,7 +3,8 @@ import { MongoClient, ServerApiVersion } from 'mongodb';
 
 export async function GET(request) { 
 
-    const uri = `mongodb+srv://kdraganik:${process.env.MONGO_PASSWORD}@mp-wt18.3jo93.mongodb.net/?retryWrites=true&w=majority&appName=MP-WT18`;
+    console.log(process.env.MONGO_USER);
+    const uri =`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@mp-wt18.3jo93.mongodb.net/?retryWrites=true&w=majority&appName=MP-WT18`;
 
     const client = new MongoClient(uri, {
     serverApi: {

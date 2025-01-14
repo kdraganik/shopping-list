@@ -19,7 +19,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Home page</h1>
       <Header />
-      {itemes.map((item, index) => <Row key={index} name={item.name} link={item.link} price={item.price} />)}
+      {itemes.map((item, index) => <Row key={index} id={item._id} name={item.name} link={item.link} price={item.price} />)}
     </div>
   );
 }
